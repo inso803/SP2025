@@ -1,5 +1,5 @@
 #include <stdio.h>
-//version1
+//version2
 int main() {
     printf("Hello, World!\n");
     return 0;
