@@ -1,0 +1,17 @@
+git command
+
+git add "檔案名"
+將檔案存在暫存區
+
+git commit -m "註解"
+將暫存區的檔案抓上本地
+
+git push
+將本地推上github
+
+git pull
+將github上的東西抓回本地
+
+git fetch origin
+git reset --hard origin/master  
+
