@@ -1,0 +1,26 @@
+git branch                 # 列出所有本地分支
+git branch -r              # 列出遠端分支
+git branch -a              # 列出本地 + 遠端分支
+
+git branch new-feature     # 建立一個新分支 (但不會切換過去)
+git checkout new-feature   # 切換到該分支
+git checkout -b new-feature   # 建立並切換到新分支 (常用)
+
+git switch new-feature     # (新寫法) 切換分支
+git switch -c new-feature  # 建立並切換分支
+
+git status     # 看目前在哪個分支 & 檔案狀態
+git log --oneline --graph --all   # 以圖表方式查看分支走向 (很直觀)
+
+git checkout main
+git merge new-feature   # 把 new-feature 的改動合併到 main
+
+git branch -d new-feature   # 刪除本地分支 (已經合併過才會成功刪)
+git branch -D new-feature   # 強制刪除本地分支
+git push origin --delete new-feature   # 刪除遠端分支
+
+git fetch                # 抓取遠端的最新分支資訊 (但不會自動合併)
+git pull                 # 抓取並合併 (常用)
+git push origin main     # 推送本地 main 到遠端 main
+git push -u origin new-feature   # 第一次推送新分支 (建立追蹤關係)
+
